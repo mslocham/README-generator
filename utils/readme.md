@@ -1,5 +1,5 @@
 
-# Mehtab
+# Mehtab's ReadME Generator
 
 ## Table of Contents
 
@@ -11,26 +11,26 @@
 6. [Licenses](#licenses)
 
 # Description
-Be careful
+Made using node modules
 
 # Installation
-Use carefully
+*placeholder text*
 
 # Usage
-Use roperly
+*placeholer text*
 
 # Contribution
-Jus be good
+*placeholder text*
 
 # Test
-Test
+*placeholder text*
 
 # Licenses
-
+MIT
 
 # Questions
 You may view my Github profile by using this [link](https://github.com/mslocham?tab=repositories)
 
 
 Have further questions?
-Write to me at <lochammehtab@gmail.com>
+Write to me at <abc@gmailllll.com>

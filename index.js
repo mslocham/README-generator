@@ -55,11 +55,34 @@ const promptUser = () => {
             type: 'input',
             name: 'test',
             message: 'What are the test instructions?'
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Enter your Github Username',
+            validate: githubInput => {
+              if (githubInput) {
+                return true;
+              } else {
+                console.log('Please enter your Github username!');
+                return false;
+              }
+            }
+          },
+          {
+            type: 'input',
+            name: 'email',
+            message: 'Type in your email address.'
         }
     ])
 }
 
 
-promptUser();
-generateMarkdown();
-// .then(answer => console.log(answer.description));
+promptUser()
+    .then(pageInfo => {
+        const pageMD = generateMarkdown(pageInfo);
+        
+        fs.writeFile('./utils/readme.md', pageMD, err => {
+            if (err) throw new Error(err);
+        });
+});
