@@ -82,7 +82,7 @@ promptUser()
     .then(pageInfo => {
         const pageMD = generateMarkdown(pageInfo);
         
-        fs.writeFile('./utils/readme.md', pageMD, err => {
+        fs.writeFile('./dist/readME.md', pageMD, err => {
             if (err) throw new Error(err);
         });
 });
